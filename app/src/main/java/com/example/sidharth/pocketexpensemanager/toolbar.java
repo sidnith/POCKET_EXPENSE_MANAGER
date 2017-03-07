@@ -1,6 +1,5 @@
 package com.example.sidharth.pocketexpensemanager;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -26,8 +25,8 @@ public class toolbar extends AppCompatActivity{
         viewPager=(ViewPager)findViewById(R.id.viewpager);
         viewPagerAdapter=new viewPagerAdapter(getSupportFragmentManager());
        viewPagerAdapter.addFragments(new HomeFragment(),"Home");
-        viewPagerAdapter.addFragments(new topfree(),"Pay");
-        viewPagerAdapter.addFragments(new toppaid(),"Expense");
+        viewPagerAdapter.addFragments(new Pay(),"Pay");
+        viewPagerAdapter.addFragments(new Expense(),"Expense");
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
     }
