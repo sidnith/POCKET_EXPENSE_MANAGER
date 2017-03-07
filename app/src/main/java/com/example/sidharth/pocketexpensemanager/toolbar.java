@@ -26,8 +26,8 @@ public class toolbar extends AppCompatActivity{
         viewPager=(ViewPager)findViewById(R.id.viewpager);
         viewPagerAdapter=new viewPagerAdapter(getSupportFragmentManager());
        viewPagerAdapter.addFragments(new HomeFragment(),"Home");
-        viewPagerAdapter.addFragments(new topfree(),"TopFree");
-        viewPagerAdapter.addFragments(new toppaid(),"TopPaid");
+        viewPagerAdapter.addFragments(new topfree(),"Pay");
+        viewPagerAdapter.addFragments(new toppaid(),"Expense");
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
     }
