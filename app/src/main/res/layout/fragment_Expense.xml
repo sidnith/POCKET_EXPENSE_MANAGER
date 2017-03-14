@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sidharth.pocketexpensemanager.expense">
+    tools:context="com.example.sidharth.pocketexpensemanager.Expense">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -45,7 +45,7 @@
         android:ems="10"
         android:id="@+id/editText2"
         android:hint="Write a description here.."
-       android:gravity="top"/>
+        android:gravity="top"/>
 
     <Button
         android:text="Add"
@@ -63,5 +63,21 @@
 
         app:srcCompat="@mipmap/ic_launcher"
         android:id="@+id/imageButton3" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="150dp"
+        android:text="Date"
+        android:onClick="Date"
+        />
+
 
 </FrameLayout>
