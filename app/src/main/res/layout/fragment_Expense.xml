@@ -64,7 +64,9 @@
         android:layout_weight="1"
         android:adjustViewBounds="true"
         app:srcCompat="@drawable/camera_icon"
-        android:id="@+id/imageButton3" />
+        android:id="@+id/image_icon"
+        android:visibility="visible"
+        android:onClick="onImage" />
 
     <DatePicker
         android:id="@+id/datePicker"
