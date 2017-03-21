@@ -1,4 +1,4 @@
-package com.example.sidharth.pocketexpensemanager;
+package com.example.sidharth.pocketexpensemanager.fragments;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -11,6 +11,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.sidharth.pocketexpensemanager.R;
+import com.example.sidharth.pocketexpensemanager.adapter.viewPagerAdapter;
+
 
 /**
  * Created by Sidharth on 3/5/2017.
@@ -21,7 +24,7 @@ public class toolbar extends AppCompatActivity{
     Toolbar toolbar;
     ViewPager viewPager;
     TabLayout tabLayout;
-    viewPagerAdapter viewPagerAdapter;
+    com.example.sidharth.pocketexpensemanager.adapter.viewPagerAdapter viewPagerAdapter;
     ImageButton imageButton;
     protected void onCreate(Bundle savedInstanceState) {
 

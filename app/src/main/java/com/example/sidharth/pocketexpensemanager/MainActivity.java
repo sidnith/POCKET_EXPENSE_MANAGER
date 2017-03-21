@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sidharth.pocketexpensemanager.fragments.setpass;
+import com.example.sidharth.pocketexpensemanager.fragments.toolbar;
+
 public class MainActivity extends AppCompatActivity {
 
     String pass="";

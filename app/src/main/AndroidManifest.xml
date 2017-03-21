@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".setpass"></activity>
-        <activity android:name=".toolbar"></activity>
+        <activity android:name=".fragments.setpass"></activity>
+        <activity android:name=".fragments.toolbar"></activity>
 
 
     </application>

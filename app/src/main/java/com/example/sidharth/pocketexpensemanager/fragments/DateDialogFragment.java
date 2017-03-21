@@ -1,4 +1,4 @@
-package com.example.sidharth.pocketexpensemanager;
+package com.example.sidharth.pocketexpensemanager.fragments;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;

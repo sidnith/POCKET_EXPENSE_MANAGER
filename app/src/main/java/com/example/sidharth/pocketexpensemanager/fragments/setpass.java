@@ -1,4 +1,4 @@
-package com.example.sidharth.pocketexpensemanager;
+package com.example.sidharth.pocketexpensemanager.fragments;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,9 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.sidharth.pocketexpensemanager.MainActivity;
+import com.example.sidharth.pocketexpensemanager.R;
 
 /**
  * Created by Sidharth on 2/8/2017.

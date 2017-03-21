@@ -1,4 +1,4 @@
-package com.example.sidharth.pocketexpensemanager;
+package com.example.sidharth.pocketexpensemanager.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
