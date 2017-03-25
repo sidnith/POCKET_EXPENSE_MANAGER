@@ -74,14 +74,5 @@
         android:layout_height="wrap_content"
         android:visibility="gone" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
-        android:layout_marginLeft="150dp"
-        android:text="Date"
-        android:onClick="Date"
-        />
-
 
 </FrameLayout>
