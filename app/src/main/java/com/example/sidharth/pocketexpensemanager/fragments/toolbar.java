@@ -7,12 +7,18 @@ import android.provider.MediaStore;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatSpinner;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.sidharth.pocketexpensemanager.R;
 import com.example.sidharth.pocketexpensemanager.adapter.viewPagerAdapter;
@@ -29,10 +35,14 @@ public class toolbar extends AppCompatActivity{
     TabLayout tabLayout;
     com.example.sidharth.pocketexpensemanager.adapter.viewPagerAdapter viewPagerAdapter;
     ImageButton imageButton;
+
+
+
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        EditText edit=(EditText)findViewById(R.id.category);
         toolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         tabLayout=(TabLayout)findViewById(R.id.tablayout);
@@ -44,11 +54,16 @@ public class toolbar extends AppCompatActivity{
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         imageButton=(ImageButton)findViewById(R.id.image_icon);
+
+
         if(!hasCamera())
         {
             imageButton.setEnabled(false);
         }
+
+
     }
+
     public void Date(View view) {
         DateDialogFragment dialog = new DateDialogFragment();
         android.app.FragmentTransaction ft = getFragmentManager().beginTransaction();
@@ -83,4 +98,7 @@ public class toolbar extends AppCompatActivity{
 
         }
     }
+
+
+
 }
