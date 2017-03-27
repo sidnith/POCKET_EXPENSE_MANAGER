@@ -42,7 +42,7 @@ public class toolbar extends AppCompatActivity{
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        EditText edit=(EditText)findViewById(R.id.category);
+        
         toolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         tabLayout=(TabLayout)findViewById(R.id.tablayout);

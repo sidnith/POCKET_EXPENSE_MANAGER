@@ -63,16 +63,6 @@
         android:hint="Write a description here.."
         android:gravity="top"/>
 
-    <TextView
-
-        android:text="Select category: "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Category"
-        android:layout_marginTop="25sp"
-        android:textSize="25sp"
-        android:layout_below="@id/textView8" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,18 +74,6 @@
         android:hint="Add money amount.."
         android:layout_alignTop="@+id/imageView"
         android:layout_toEndOf="@+id/imageView" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Like Clothing,Food etc"
-        android:ems="10"
-        android:id="@+id/category"
-        android:layout_alignBaseline="@+id/Category"
-        android:layout_alignBottom="@+id/Category"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/Category" />
 
 
 </RelativeLayout>
