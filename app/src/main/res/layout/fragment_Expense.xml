@@ -74,6 +74,22 @@
         android:hint="Add money amount.."
         android:layout_alignTop="@+id/imageView"
         android:layout_toEndOf="@+id/imageView" />
+    <TextView
+        android:text="Category: "
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="100sp"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Spinner
+        android:id="@+id/cat_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="100dp"
+        >
+    </Spinner>
 
 
 </RelativeLayout>

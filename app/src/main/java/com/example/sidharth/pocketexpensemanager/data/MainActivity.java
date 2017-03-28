@@ -1,4 +1,4 @@
-package com.example.sidharth.pocketexpensemanager;
+package com.example.sidharth.pocketexpensemanager.data;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sidharth.pocketexpensemanager.R;
 import com.example.sidharth.pocketexpensemanager.fragments.setpass;
 import com.example.sidharth.pocketexpensemanager.fragments.toolbar;
 

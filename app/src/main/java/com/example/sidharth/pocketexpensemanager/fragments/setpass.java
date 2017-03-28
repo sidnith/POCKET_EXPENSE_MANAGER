@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.sidharth.pocketexpensemanager.MainActivity;
+import com.example.sidharth.pocketexpensemanager.data.MainActivity;
 import com.example.sidharth.pocketexpensemanager.R;
 
 /**

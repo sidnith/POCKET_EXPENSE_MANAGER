@@ -3,22 +3,22 @@ package com.example.sidharth.pocketexpensemanager.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.example.sidharth.pocketexpensemanager.R;
+import com.example.sidharth.pocketexpensemanager.adapter.Category_Adapter;
+import com.example.sidharth.pocketexpensemanager.data.Category_Data;
+
+import java.util.ArrayList;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class expense extends Fragment{
+public class expense extends Fragment {
 
 
     public expense() {
@@ -30,8 +30,21 @@ public class expense extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_expense, container, false);
-
+        View itemView=inflater.inflate(R.layout.fragment_expense, container, false);
+        ArrayList<Category_Data> list=new ArrayList<>();
+        list.add(new Category_Data("Books", R.drawable.books));
+        list.add(new Category_Data("Clothes", R.drawable.clothes));
+        list.add(new Category_Data("Entertainment", R.drawable.entertainment));
+        list.add(new Category_Data("Fuel", R.drawable.fuel));
+        list.add(new Category_Data("General", R.drawable.general));
+        list.add(new Category_Data("Gift", R.drawable.gift));
+        list.add(new Category_Data("Holidays", R.drawable.holidays));
+        list.add(new Category_Data("Shopping", R.drawable.shopping));
+        list.add(new Category_Data("Transport", R.drawable.transport));
+        Spinner spin = (Spinner)itemView.findViewById(R.id.cat_spinner);
+        Category_Adapter adapter = new Category_Adapter(getActivity(), R.layout.custom_category_list, R.id.category,list);
+        spin.setAdapter(adapter);
+        return itemView;
     }
 
 
